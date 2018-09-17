@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>KdOne</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+<%# The "application" layout is the default layout. It extends "base"  %>
+<%# to include things like header, footer, and alerts that are common  %>
+<%# to most (but not all) views.                                       %>
+<div class="container-fluid">
+  <div class="container-fluid">
+    <%= render "layouts/header" %>
+  </div>
+  <div class="container-fluid">
+    <%= render "shared/flash" %>
     <%= yield %>
-  </body>
-</html>
+  </div>
+</div>
+
+<% parent_layout "base" %>

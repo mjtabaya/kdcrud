@@ -30,6 +30,7 @@ gem 'cancancan'
 gem 'devise'
 gem 'rails_admin', '1.4.0'
 gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development do
   # provides commented schema info for files
