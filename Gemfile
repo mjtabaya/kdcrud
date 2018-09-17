@@ -23,6 +23,13 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'marco-polo'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.2.0', require: false
+# Use bootstrap-table for better tables
+gem "bootstrap-table-rails"
+# Authentication system
+gem 'devise'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '1.4.0'
+gem 'cancancan'
 
 group :development do
   # provides commented schema info for files
