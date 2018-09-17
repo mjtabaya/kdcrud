@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/mshibuya/remotipart.git
+  revision: e08ea9a3aa8db9a8b2b97b6c9e7b078ed08915f2
+  specs:
+    remotipart (1.4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -61,11 +67,13 @@ GEM
       debug_inspector (>= 0.0.1)
     bootsnap (1.3.2)
       msgpack (~> 1.0)
+    bootstrap-table-rails (1.12.1)
     brakeman (4.3.1)
     builder (3.2.3)
     bundler-audit (0.6.0)
       bundler (~> 1.2)
       thor (~> 0.18)
+    cancancan (2.3.0)
     capybara (3.7.2)
       addressable
       mini_mime (>= 0.1.3)
@@ -89,6 +97,12 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
+    devise (4.5.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -96,6 +110,8 @@ GEM
     eventmachine (1.2.7-x86-mingw32)
     execjs (2.7.0)
     ffi (1.9.25-x86-mingw32)
+    font-awesome-rails (4.7.0.4)
+      railties (>= 3.2, < 6.0)
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -117,6 +133,9 @@ GEM
     guard-minitest (2.4.6)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
     http_parser.rb (0.6.0)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
@@ -126,6 +145,24 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    jquery-rails (4.3.3)
+      rails-dom-testing (>= 1, < 3)
+      railties (>= 4.2.0)
+      thor (>= 0.14, < 2.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
+    kaminari (1.1.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
+      actionview
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
+      activerecord
+      kaminari-core (= 1.1.1)
+    kaminari-core (1.1.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -147,12 +184,14 @@ GEM
     msgpack (1.2.4-x86-mingw32)
     multi_json (1.13.1)
     nenv (0.3.0)
+    nested_form (0.3.2)
     nio4r (2.3.1)
     nokogiri (1.8.4-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    orm_adapter (0.5.0)
     overcommit (0.46.0)
       childprocess (~> 0.6, >= 0.6.3)
       iniparse (~> 1.4)
@@ -171,6 +210,9 @@ GEM
     rack (2.0.5)
     rack-livereload (0.3.17)
       rack
+    rack-pjax (1.0.0)
+      nokogiri (~> 1.5)
+      rack (>= 1.1)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.2.1)
@@ -191,6 +233,19 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_admin (1.4.0)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0, < 5)
+      haml (>= 4.0, < 6)
+      jquery-rails (>= 3.0, < 5)
+      jquery-ui-rails (>= 5.0, < 7)
+      kaminari (>= 0.14, < 2.0)
+      nested_form (~> 0.3)
+      rack-pjax (>= 0.7)
+      rails (>= 4.0, < 6)
+      remotipart (~> 1.3)
+      sass-rails (>= 4.0, < 6)
     railties (5.2.1)
       actionpack (= 5.2.1)
       activesupport (= 5.2.1)
@@ -202,6 +257,9 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     rubocop (0.59.1)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
@@ -240,6 +298,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    temple (0.8.0)
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
@@ -251,6 +310,8 @@ GEM
     tzinfo-data (1.2018.5)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.4.0)
+    warden (1.2.7)
+      rack (>= 1.0)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -269,11 +330,14 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootsnap (>= 1.2.0)
+  bootstrap-table-rails
   brakeman
   bundler-audit (>= 0.5.0)
+  cancancan
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  devise
   guard (>= 2.2.2)
   guard-livereload
   guard-minitest
@@ -286,6 +350,8 @@ DEPENDENCIES
   puma (~> 3.11)
   rack-livereload
   rails (~> 5.2.1)
+  rails_admin (= 1.4.0)
+  remotipart!
   rubocop (>= 0.58.0)
   sass-rails (~> 5.0)
   selenium-webdriver
