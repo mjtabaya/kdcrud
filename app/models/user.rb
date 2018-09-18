@@ -21,7 +21,7 @@
 class User < ApplicationRecord
   validates :first_name, :last_name, :email, :phone, :card, :encrypted_password, presence: true
   validates :email, uniqueness: true
-  enum role: %i[user]
+  enum role: %i[user admin]
   validates :role, inclusion: { in: roles.keys }
 
   def self.role_options

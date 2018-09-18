@@ -19,8 +19,6 @@ development:
   encoding: unicode
   database: kd-app-uno_development
   min_messages: WARNING
-  username: postgres
-  password: password
   pool: 5
 
   # The above config should "just work" on Mac with PostgreSQL
@@ -46,6 +44,4 @@ test:
   encoding: unicode
   database: kd-app-uno_development
   min_messages: WARNING
-  username: postgres
-  password: password
   pool: 5
