@@ -10,7 +10,10 @@ gem 'pgcli-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem "sass-rails", "~> 5.0"
+# Styles for forms
+gem "bootstrap_form", ">= 4.0.0.alpha1"
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -31,6 +34,8 @@ gem 'devise'
 gem 'rails_admin', '1.4.0'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+# Notification system
+gem 'toastr-rails'
 
 group :development do
   # provides commented schema info for files

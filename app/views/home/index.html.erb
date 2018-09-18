@@ -7,6 +7,9 @@
       <li>Create a tool that will allow users to register and login.</li>
       <li>Every user contains a first name, last name, phone number, credit card number, email and password.</li>
       <li>Users with "publisher" role that have CRUD access on Articles.</li>
+      <% if can? :manage, User %>
+      	<li>Visible only for superadmins and supervisors! </li>
+      <% end %>
     </ul>
     <h1>
       <% if current_user.nil? %>

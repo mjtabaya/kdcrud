@@ -4,7 +4,7 @@
         <div class="container-fluid">
           <% if user_signed_in? %>
             <ul class="nav navbar-nav navbar-navigation navbar-username">
-              <li><%= current_user.username %></li>
+              <li><%= current_user.first_name %></li>
             </ul>
           <% end %>
           <ul class="nav navbar-nav navbar-right navbar-navigation">
